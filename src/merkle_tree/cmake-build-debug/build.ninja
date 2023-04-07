@@ -67,6 +67,12 @@ build CMakeFiles/llh.dir/tree.cpp.o: CXX_COMPILER__llh_Debug /home/Eighthalf/gem
   OBJECT_DIR = CMakeFiles/llh.dir
   OBJECT_FILE_DIR = CMakeFiles/llh.dir
 
+build CMakeFiles/llh.dir/forest.cpp.o: CXX_COMPILER__llh_Debug /home/Eighthalf/gem5/src/merkle_tree/forest.cpp || cmake_object_order_depends_target_llh
+  DEP_FILE = CMakeFiles/llh.dir/forest.cpp.o.d
+  FLAGS = -g -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles/llh.dir
+  OBJECT_FILE_DIR = CMakeFiles/llh.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target llh
@@ -75,7 +81,7 @@ build CMakeFiles/llh.dir/tree.cpp.o: CXX_COMPILER__llh_Debug /home/Eighthalf/gem
 #############################################
 # Link the executable llh
 
-build llh: CXX_EXECUTABLE_LINKER__llh_Debug CMakeFiles/llh.dir/main.cpp.o CMakeFiles/llh.dir/node.cpp.o CMakeFiles/llh.dir/tree.cpp.o
+build llh: CXX_EXECUTABLE_LINKER__llh_Debug CMakeFiles/llh.dir/main.cpp.o CMakeFiles/llh.dir/node.cpp.o CMakeFiles/llh.dir/tree.cpp.o CMakeFiles/llh.dir/forest.cpp.o
   FLAGS = -g
   OBJECT_DIR = CMakeFiles/llh.dir
   POST_BUILD = :

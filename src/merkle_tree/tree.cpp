@@ -69,8 +69,6 @@ void Tree::buildBaseLeafes(vector<string> base_leafs) //建立叶子节点列表
         cout << leaf << ":" << new_node->getHash() << endl;
 
         new_nodes.push_back(new_node);
-
-        base_leafs_list.push_back(leaf);
     }
 
     base.push_back(new_nodes);
@@ -207,7 +205,6 @@ void Tree::printLeafNodes(){
 
 vector<string> Tree::InputNodeData() {
     cout << "输入 Merkle Tree的叶子结点的数据，以‘;’作为结束符: " << endl;
-    vector<string> v;
 
     while (1) //输入叶子节点
     {
@@ -215,15 +212,27 @@ vector<string> Tree::InputNodeData() {
         cin >> str;
         if (str != ";")
         {
-            v.push_back(str);
+            base_leafs_list.push_back(str);
         }
         else
         {
             break;
         }
     }
-    return  v;
+
+    return  base_leafs_list;
 }
+
+vector<vector<node*>> Tree::getBase() {
+    return this->base;
+}
+
+vector<string> Tree::getBaseLeafsList() {
+    return this->base_leafs_list;
+}
+
+
+
 
 
 Tree::~Tree() {}
