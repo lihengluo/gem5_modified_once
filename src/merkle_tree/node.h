@@ -12,69 +12,22 @@ using namespace std;
 class node
 {
 private:
-    string hash_str;
-    node* parent;
-    //左孩子在0，右孩子在1
-    node* children[2];
+    string hash_str; //该节点的哈希值
+    node* parent;    //父节点
+    node* children[2];  //左右孩子，0为左孩子，1为右孩子
 public:
-    node();
+    node();  //构造函数
     node* getParent();//得到父节点
     void setChildren(node* children_l, node* children_r); //设置左右孩子
-    node* getChildren(int index);
-    void setParent(node* parent);
-    string getHash();
-    int checkDir();
-    node* getSibling();
-    void setHash(string hash_str);
-    virtual ~node();
+    node* getChildren(int index);  //得到左孩子或者右孩子，index为0时返回左孩子，为1时返回右孩子
+    void setParent(node* parent);  //设置父节点
+    string getHash();  //得到哈希值
+    int checkDir();    //判断该节点是父节点的左孩子还是右孩子，返回0或1，0为左孩子，1为右孩子
+    node* getSibling();//得到兄弟节点
+    void setHash(string hash_str); //设置哈希值，传入一个字符串，将其哈希化
+    virtual ~node();  //析构函数
 };
-node::node()
-{
-    parent = nullptr;
-    children[0] = nullptr;
-    children[1] = nullptr;
-}
 
-//设置哈希值
-void node::setHash(string hash_str)
-{
-    this->hash_str = sha2::hash256_hex_string(hash_str);
-}
-node* node::getParent()
-{
-    return parent;
-}
-void node::setParent(node* parent)
-{
-    this->parent = parent;
-}
-void node::setChildren(node* children_l, node* children_r)
-{
-    children[0] = children_l;
-    children[1] = children_r;
-}
-node* node::getSibling() //得到兄弟节点
-{
-    //得到该节点的父节点
-    node* parent = getParent();
 
-    //判断父节点的左孩子和本节点是否相同
-    //相同返回右孩子，不同返回左孩子
-    return parent->getChildren(0) == this ? parent->getChildren(1) : parent->getChildren(0);
-}
-node* node::getChildren(int index) //得到左孩子或者右孩子 ,index为0时返回左孩子，为1时返回右孩子
-{
-    return index <= 1 ? children[index] : nullptr;
-}
-string node::getHash()
-{
-    return hash_str;
-}
-int node::checkDir() //判断该节点是父节点的左孩子还是右孩子
-{
-    //如果其父节点的左孩子是该节点 返回0 否则则返回1
-    return parent->getChildren(0) == this ? 0 : 1;
-}
 
-node::~node() {}
 

@@ -1,3 +1,5 @@
+
+// Copy this file to your project and include it in your source code.
 #pragma once
 #ifndef PICOSHA2_H
 #define PICOSHA2_H
