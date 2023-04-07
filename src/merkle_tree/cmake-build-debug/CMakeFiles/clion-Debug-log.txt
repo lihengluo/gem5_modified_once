@@ -1,0 +1,4 @@
+/home/Eighthalf/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8109.174/bin/cmake/linux/x64/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/home/Eighthalf/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8109.174/bin/ninja/linux/x64/ninja -G Ninja -S /home/Eighthalf/gem5/src/merkle_tree -B /home/Eighthalf/gem5/src/merkle_tree/cmake-build-debug
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/Eighthalf/gem5/src/merkle_tree/cmake-build-debug
