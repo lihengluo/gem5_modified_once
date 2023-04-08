@@ -1,12 +1,19 @@
-This is the gem5 simulator.
+This is the latest gem5 simulator.
 
 
 It is expected to be modified.
 
 the first step is to build a simple merkle tree in it.It has been completed.
 the merkel tree file is stored in ./src/merkle_tree
+I create two Class node/tree to manage the simple tree
 
-the next step is to expand a single merkel tree into a forest.
+the second step is to expand a single merkel tree into a forest.It has been completed.
+I expand the Class Forest to manage the multiple trees operation
+Besides, I construct the Class MMT_Root to define the structure of MMT detailed by Penglai essays.
+
+the next step is to build the multiple nodes in Gem5,such as local nodes and remote nodes.
+I strived to firstly complete the simplest interaction: send and receive.
+
 
 
 
