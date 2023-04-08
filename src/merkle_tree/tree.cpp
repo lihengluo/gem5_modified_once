@@ -15,7 +15,7 @@ int Tree::makeBinary(vector<node*>& node_vector) //使叶子节点成为双数
 
 
 
-void Tree::buildTree() //建造merkle tree
+void Tree::BuildTree(int index) //建造merkle tree, index为树的索引
 {
 
     cout << "准备开始构建merkle tree" << endl;
@@ -49,9 +49,53 @@ void Tree::buildTree() //建造merkle tree
         cout << "该层的结点有 " << base.end()[-1].size() << " 个:" << endl;
     } while (base.end()[-1].size() > 1); //这样每一轮得到新一层的父节点，知道得到根节点 退出循环
 
+    Tree_root.root_hash = base.end()[-1][0]->getHash(); //根节点的哈希值
+    Tree_root.index = index;
+
     merkleRoot = base.end()[-1][0]->getHash(); //根节点的哈希值
 
     cout << "Merkle Root : " << merkleRoot << endl << endl;
+    cout << "Merkle Tree 构建完成" << endl;
+}
+
+void Tree::UpdateTree() {
+    cout << "准备开始更新merkle tree" << endl;
+    do
+    {
+        vector<node*> new_nodes;
+        makeBinary(base.end()[-1]); //传入尾元素 即一个节点列表
+
+        for (int i = 0; i < base.end()[-1].size(); i += 2)
+        {
+            node* new_parent = new node; //设置父亲节点 传入最后一个元素 即一个节点列表的第i和i+1个
+            base.end()[-1][i]->setParent(new_parent);
+            base.end()[-1][i + 1]->setParent(new_parent);
+
+            //通过两个孩子节点的哈希值设置父节点哈希值
+            new_parent->setHash((base.end()[-1][i]->getHash() + base.end()[-1][i + 1]->getHash()));
+            //将该父节点的左右孩子节点设置为这两个
+            new_parent->setChildren(base.end()[-1][i], base.end()[-1][i + 1]);
+            //将new_parent压入new_nodes
+            new_nodes.push_back(new_parent);
+
+            cout << "将 " << base.end()[-1][i]->getHash() << " 和 " << base.end()[-1][i + 1]->getHash() << " 连接,得到对应父节点的哈希值 " << endl;
+        }
+        cout << endl;
+        cout << "得到的对应父节点的哈希值:" << endl;
+
+
+        base.push_back(new_nodes); //将新一轮的父节点new_nodes压入base
+
+        cout << "该层的结点有 " << base.end()[-1].size() << " 个:" << endl;
+
+    } while (base.end()[-1].size() > 1); //这样每一轮得到新一层的父节点，知道得到根节点 退出循环
+
+    Tree_root.root_hash = base.end()[-1][0]->getHash(); //根节点的哈希值
+    merkleRoot = base.end()[-1][0]->getHash(); //根节点的哈希值
+
+    cout << "Merkle Root : " << merkleRoot << endl << endl;
+    cout << endl;
+    cout << "merkle tree 更新成功" << endl;
 }
 
 void Tree::buildBaseLeafes(vector<string> base_leafs) //建立叶子节点列表
@@ -230,8 +274,6 @@ vector<vector<node*>> Tree::getBase() {
 vector<string> Tree::getBaseLeafsList() {
     return this->base_leafs_list;
 }
-
-
 
 
 
