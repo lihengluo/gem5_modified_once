@@ -49,12 +49,11 @@ void Tree::BuildTree(int index) //建造merkle tree, index为树的索引
         cout << "该层的结点有 " << base.end()[-1].size() << " 个:" << endl;
     } while (base.end()[-1].size() > 1); //这样每一轮得到新一层的父节点，知道得到根节点 退出循环
 
-    Tree_root.root_hash = base.end()[-1][0]->getHash(); //根节点的哈希值
-    Tree_root.index = index;
+    id = index;
 
-    merkleRoot = base.end()[-1][0]->getHash(); //根节点的哈希值
+    merkleRoot_hash = base.end()[-1][0]->getHash(); //根节点的哈希值
 
-    cout << "Merkle Root : " << merkleRoot << endl << endl;
+    cout << "Merkle Root : " << merkleRoot_hash << endl << endl;
     cout << "Merkle Tree 构建完成" << endl;
 }
 
@@ -90,10 +89,9 @@ void Tree::UpdateTree() {
 
     } while (base.end()[-1].size() > 1); //这样每一轮得到新一层的父节点，知道得到根节点 退出循环
 
-    Tree_root.root_hash = base.end()[-1][0]->getHash(); //根节点的哈希值
-    merkleRoot = base.end()[-1][0]->getHash(); //根节点的哈希值
+    merkleRoot_hash = base.end()[-1][0]->getHash(); //根节点的哈希值
 
-    cout << "Merkle Root : " << merkleRoot << endl << endl;
+    cout << "Merkle Root : " << merkleRoot_hash << endl << endl;
     cout << endl;
     cout << "merkle tree 更新成功" << endl;
 }
@@ -160,7 +158,7 @@ int Tree::verify(string hash)
         el_node = el_node->getParent();
     } while ((el_node->getParent()) != NULL); //到达根节点
 
-    return act_hash == merkleRoot ? 1 : 0;
+    return act_hash == merkleRoot_hash ? 1 : 0;
 }
 
 void Tree::VerrifyTree() {

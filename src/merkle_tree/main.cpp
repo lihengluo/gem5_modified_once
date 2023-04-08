@@ -1,16 +1,13 @@
-#include <iostream>
-#include "tree.h"
-#include "sha256.h"
-#include "vector"
-#include "forest.h"
-using namespace std;
+#include "test.h"
+
+
 
 int main()
 {
-    Forest forest;
-
-    forest.buildForest();
-
-
+    //test_tree();
+    Test_MMT_root();
     return 0;
+
+
+
 }

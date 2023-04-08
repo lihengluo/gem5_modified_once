@@ -16,14 +16,13 @@ vector<Tree*> Forest::get_trees() {
 void Forest::createTree(int index)
 {
     Tree tree;
-    Tree ntree;
 
-    vector<string> v = ntree.InputNodeData();
-    ntree.buildBaseLeafes(v);
-    ntree.BuildTree(index);
-    ntree.printLeafNodes();
+    vector<string> v = tree.InputNodeData();
+    tree.buildBaseLeafes(v);
+    tree.BuildTree(index);
+    tree.printLeafNodes();
     trees.push_back(&tree);
-    cout << "这颗树的序号为：" << tree.getRoot().index << endl;
+    cout << "这颗树的序号为：" << tree.getIndex() << endl;
     number_of_trees++;
 }
 
@@ -33,6 +32,7 @@ void Forest::buildForest() {
     cin >> num;
     for (int i = 1; i <= num; i++)
     {
+        cout << "开始构建第" << i << "颗树" << endl;
         createTree(i);
     }
 
@@ -41,7 +41,7 @@ void Forest::buildForest() {
 void Forest::printForest() {
     for (Tree* el : trees)
     {
-        cout << "这颗树的序号为：" << el->getRoot().index << endl;
+        cout << "这颗树的序号为：" << el->getIndex() << endl;
         el->printLeafNodes();
     }
 }
@@ -53,4 +53,6 @@ void Forest::VerrifyForest() {
 void Forest::ModifyForest() {
     //TODO
 }
+
+Forest::~Forest(){}
 
