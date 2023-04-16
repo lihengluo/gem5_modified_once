@@ -222,13 +222,13 @@ llh_merkle_tree_IS_TOP_LEVEL:STATIC=ON
 llh_merkle_tree_SOURCE_DIR:STATIC=/home/Eighthalf/gem5/src/merkle_tree
 
 //Value Computed by CMake
-merkle_tree_BINARY_DIR:STATIC=/home/Eighthalf/gem5/src/merkle_tree/cmake-build-debug/code
+merkle_tree_BINARY_DIR:STATIC=/home/Eighthalf/gem5/src/merkle_tree/cmake-build-debug/src
 
 //Value Computed by CMake
 merkle_tree_IS_TOP_LEVEL:STATIC=OFF
 
 //Value Computed by CMake
-merkle_tree_SOURCE_DIR:STATIC=/home/Eighthalf/gem5/src/merkle_tree/code
+merkle_tree_SOURCE_DIR:STATIC=/home/Eighthalf/gem5/src/merkle_tree/src
 
 
 ########################

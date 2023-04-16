@@ -56,7 +56,7 @@
 			[
 				{
 					"backtrace" : 3,
-					"path" : "/home/Eighthalf/gem5/src/merkle_tree/code"
+					"path" : "/home/Eighthalf/gem5/src/merkle_tree/src"
 				}
 			],
 			"language" : "CXX",
@@ -78,7 +78,7 @@
 	[
 		{
 			"backtrace" : 2,
-			"id" : "merkle_tree::@1c76e98fcac0e60aa45c"
+			"id" : "merkle_tree::@145eef247bfb46b6828c"
 		}
 	],
 	"id" : "llh_merkle_tree::@6890427a1f51a3e7e1df",
@@ -96,7 +96,7 @@
 			},
 			{
 				"backtrace" : 2,
-				"fragment" : "code/libmerkle_tree.a",
+				"fragment" : "src/libmerkle_tree.a",
 				"role" : "libraries"
 			}
 		],

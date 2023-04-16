@@ -1,27 +1,27 @@
 [
 {
   "directory": "/home/Eighthalf/gem5/src/merkle_tree/cmake-build-debug",
-  "command": "/usr/bin/c++ -I/home/Eighthalf/gem5/src/merkle_tree/code -Werror -g -fdiagnostics-color=always -o CMakeFiles/llh_merkle_tree.dir/main.cpp.o -c /home/Eighthalf/gem5/src/merkle_tree/main.cpp",
+  "command": "/usr/bin/c++ -I/home/Eighthalf/gem5/src/merkle_tree/src -Werror -g -fdiagnostics-color=always -o CMakeFiles/llh_merkle_tree.dir/main.cpp.o -c /home/Eighthalf/gem5/src/merkle_tree/main.cpp",
   "file": "/home/Eighthalf/gem5/src/merkle_tree/main.cpp"
 },
 {
   "directory": "/home/Eighthalf/gem5/src/merkle_tree/cmake-build-debug",
-  "command": "/usr/bin/c++ -I/home/Eighthalf/gem5/src/merkle_tree/code -I/home/Eighthalf/gem5/src/merkle_tree/code/cpp -Werror -g -fdiagnostics-color=always -std=gnu++17 -o code/CMakeFiles/merkle_tree.dir/forest/forest.cpp.o -c /home/Eighthalf/gem5/src/merkle_tree/code/forest/forest.cpp",
-  "file": "/home/Eighthalf/gem5/src/merkle_tree/code/forest/forest.cpp"
+  "command": "/usr/bin/c++ -I/home/Eighthalf/gem5/src/merkle_tree/src -I/home/Eighthalf/gem5/src/merkle_tree/src/cpp -Werror -g -fdiagnostics-color=always -std=gnu++17 -o src/CMakeFiles/merkle_tree.dir/forest/forest.cpp.o -c /home/Eighthalf/gem5/src/merkle_tree/src/forest/forest.cpp",
+  "file": "/home/Eighthalf/gem5/src/merkle_tree/src/forest/forest.cpp"
 },
 {
   "directory": "/home/Eighthalf/gem5/src/merkle_tree/cmake-build-debug",
-  "command": "/usr/bin/c++ -I/home/Eighthalf/gem5/src/merkle_tree/code -I/home/Eighthalf/gem5/src/merkle_tree/code/cpp -Werror -g -fdiagnostics-color=always -std=gnu++17 -o code/CMakeFiles/merkle_tree.dir/node/node.cpp.o -c /home/Eighthalf/gem5/src/merkle_tree/code/node/node.cpp",
-  "file": "/home/Eighthalf/gem5/src/merkle_tree/code/node/node.cpp"
+  "command": "/usr/bin/c++ -I/home/Eighthalf/gem5/src/merkle_tree/src -I/home/Eighthalf/gem5/src/merkle_tree/src/cpp -Werror -g -fdiagnostics-color=always -std=gnu++17 -o src/CMakeFiles/merkle_tree.dir/node/node.cpp.o -c /home/Eighthalf/gem5/src/merkle_tree/src/node/node.cpp",
+  "file": "/home/Eighthalf/gem5/src/merkle_tree/src/node/node.cpp"
 },
 {
   "directory": "/home/Eighthalf/gem5/src/merkle_tree/cmake-build-debug",
-  "command": "/usr/bin/c++ -I/home/Eighthalf/gem5/src/merkle_tree/code -I/home/Eighthalf/gem5/src/merkle_tree/code/cpp -Werror -g -fdiagnostics-color=always -std=gnu++17 -o code/CMakeFiles/merkle_tree.dir/tree/tree.cpp.o -c /home/Eighthalf/gem5/src/merkle_tree/code/tree/tree.cpp",
-  "file": "/home/Eighthalf/gem5/src/merkle_tree/code/tree/tree.cpp"
+  "command": "/usr/bin/c++ -I/home/Eighthalf/gem5/src/merkle_tree/src -I/home/Eighthalf/gem5/src/merkle_tree/src/cpp -Werror -g -fdiagnostics-color=always -std=gnu++17 -o src/CMakeFiles/merkle_tree.dir/tree/tree.cpp.o -c /home/Eighthalf/gem5/src/merkle_tree/src/tree/tree.cpp",
+  "file": "/home/Eighthalf/gem5/src/merkle_tree/src/tree/tree.cpp"
 },
 {
   "directory": "/home/Eighthalf/gem5/src/merkle_tree/cmake-build-debug",
-  "command": "/usr/bin/c++ -I/home/Eighthalf/gem5/src/merkle_tree/code -I/home/Eighthalf/gem5/src/merkle_tree/code/cpp -Werror -g -fdiagnostics-color=always -std=gnu++17 -o code/CMakeFiles/merkle_tree.dir/utils/utils.cpp.o -c /home/Eighthalf/gem5/src/merkle_tree/code/utils/utils.cpp",
-  "file": "/home/Eighthalf/gem5/src/merkle_tree/code/utils/utils.cpp"
+  "command": "/usr/bin/c++ -I/home/Eighthalf/gem5/src/merkle_tree/src -I/home/Eighthalf/gem5/src/merkle_tree/src/cpp -Werror -g -fdiagnostics-color=always -std=gnu++17 -o src/CMakeFiles/merkle_tree.dir/utils/utils.cpp.o -c /home/Eighthalf/gem5/src/merkle_tree/src/utils/utils.cpp",
+  "file": "/home/Eighthalf/gem5/src/merkle_tree/src/utils/utils.cpp"
 }
 ]

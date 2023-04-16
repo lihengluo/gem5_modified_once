@@ -1183,7 +1183,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/Eighthalf/gem5/src/merkle_tree/cmake-build-debug/code"
+			"value" : "/home/Eighthalf/gem5/src/merkle_tree/cmake-build-debug/src"
 		},
 		{
 			"name" : "merkle_tree_IS_TOP_LEVEL",
@@ -1207,7 +1207,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/Eighthalf/gem5/src/merkle_tree/code"
+			"value" : "/home/Eighthalf/gem5/src/merkle_tree/src"
 		}
 	],
 	"kind" : "cache",

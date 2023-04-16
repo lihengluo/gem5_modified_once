@@ -735,7 +735,7 @@
 			"path" : "cmake-build-debug/CMakeFiles/3.25.2/CMakeCXXCompiler.cmake"
 		},
 		{
-			"path" : "code/CMakeLists.txt"
+			"path" : "src/CMakeLists.txt"
 		}
 	],
 	"kind" : "cmakeFiles",
