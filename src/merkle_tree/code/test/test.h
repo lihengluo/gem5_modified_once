@@ -1,14 +1,18 @@
 #include <iostream>
-#include "tree.h"
-#include "sha256.h"
+
+#include "../hash/sha256.h"
+#include "../tree/tree.h"
+
 #include "vector"
-#include "forest.h"
+#include "../forest/forest.h"
+#include "../utils//utils.h"
+
 using namespace std;
 
 void test_tree(){
     Tree tree;
-    vector<string> base_leafs = tree.InputNodeData();
-    tree.buildBaseLeafes(base_leafs);
+    tree.set_base_leafs_list(InputNodeData());
+    tree.buildBaseLeafes(tree.getBaseLeafsList());
     tree.BuildTree(1);
     tree.printLeafNodes();
     tree.VerrifyTree();

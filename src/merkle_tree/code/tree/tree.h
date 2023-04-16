@@ -1,8 +1,10 @@
 #pragma once
-#include "node.h"
 #include <iostream>
-#include "sha256.h"
-#include "MMT_root.h"
+
+#include "../MMT/MMT_root.h"
+#include "../hash/sha256.h"
+#include "../node/node.h"
+
 using namespace std;
 
 class Tree
@@ -25,7 +27,6 @@ public:
     void VerrifyTree(); //验证树
     void ModifyTree(); //修改树
     void UpdateTree(); //更新树
-    vector<string> InputNodeData(); //输入叶子节点
     vector<vector<node*>> getBase(); //获取base
     vector<string> getBaseLeafsList(); //获取叶子节点列表
     void setRoot(string root_hash, int index){
@@ -33,9 +34,9 @@ public:
         this->id = index;
     }; //设置树的根数据
     string getRoot_hash(){return this->merkleRoot_hash;} //获取树的根节点的哈希值
+    void set_base_leafs_list(vector<string> base_leafs_list1){this->base_leafs_list = base_leafs_list1;} //设置叶子节点列表
     int getIndex(){return this->id;} //获取树的序号
     //struct MMTroot getMMTroot(){return this->MMT_root;} //获取树的根节点的数据
     //void setMMTroot(struct MMTroot root){this->MMT_root = root;} //设置树的根节点的数据
     virtual ~Tree(); //析构函数
 };
-

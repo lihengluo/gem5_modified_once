@@ -13,7 +13,4 @@ Besides, I construct the Class MMT_Root to define the structure of MMT detailed 
 
 the next step is to build the multiple nodes in Gem5,such as local nodes and remote nodes.
 I strived to firstly complete the simplest interaction: send and receive.
-
-
-
-
+It is adviced to modify the function libvm malloc.

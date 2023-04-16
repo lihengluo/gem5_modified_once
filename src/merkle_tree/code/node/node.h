@@ -4,14 +4,30 @@
 
 #include <iostream>
 #include <sstream>
-#include "sha256.h"
 #include <string>
 #include <vector>
+
+#include "../hash/sha256.h"
+
 using namespace std;
 
 class node
 {
 private:
+    struct node_info
+    {
+        uint64_t global_couner; //全局计数器
+        uint8_t extra_idx : 5;
+        uint32_t extra_len : 27;
+        uint16_t local_counter[32]; //局部计数器 , only 11bits suppoerted
+        uint64_t hash; //哈希值
+    };
+    struct leaf_node_info
+    {
+        uint64_t global_couner; //全局计数器
+        uint8_t local_counter[64]; //局部计数器 , only 6bits suppoerted
+        uint64_t hash; //哈希值
+    };
     string hash_str; //该节点的哈希值
     node* parent;    //父节点
     node* children[2];  //左右孩子，0为左孩子，1为右孩子
@@ -27,7 +43,3 @@ public:
     void setHash(string hash_str); //设置哈希值，传入一个字符串，将其哈希化
     virtual ~node();  //析构函数
 };
-
-
-
-

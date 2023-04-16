@@ -44,6 +44,7 @@ import argparse
 import sys
 import os
 
+import args as args
 import m5
 from m5.defines import buildEnv
 from m5.objects import *
@@ -51,6 +52,9 @@ from m5.params import NULL
 from m5.util import addToPath, fatal, warn
 from gem5.isas import ISA
 from gem5.runtime import get_runtime_isa
+
+from build.X86.python.m5.params import AddrRange
+from build.X86.sim.System import System
 
 addToPath("../")
 

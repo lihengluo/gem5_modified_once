@@ -1,13 +1,10 @@
-#include "test.h"
+#include "src/test/test.h"
 
 
 
 int main()
 {
-    //test_tree();
-    Test_MMT_root();
+    test_tree();
     return 0;
-
-
 
 }

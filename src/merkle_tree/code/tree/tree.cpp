@@ -228,7 +228,7 @@ void Tree::ModifyTree() {
     cout << "准备开始修改merkle tree" << endl;
     cout << "修改结果:" << endl;
 
-    if(modifyTree(modify_str, after_modify_string)){
+    if (modifyTree(modify_str, after_modify_string)){
         cout << "修改成功" << endl;
     }else{
         cout << "未找到目标节点" << endl;
@@ -245,25 +245,6 @@ void Tree::printLeafNodes(){
     cout << endl;
 }
 
-vector<string> Tree::InputNodeData() {
-    cout << "输入 Merkle Tree的叶子结点的数据，以‘;’作为结束符: " << endl;
-
-    while (1) //输入叶子节点
-    {
-        string str;
-        cin >> str;
-        if (str != ";")
-        {
-            base_leafs_list.push_back(str);
-        }
-        else
-        {
-            break;
-        }
-    }
-
-    return  base_leafs_list;
-}
 
 vector<vector<node*>> Tree::getBase() {
     return this->base;

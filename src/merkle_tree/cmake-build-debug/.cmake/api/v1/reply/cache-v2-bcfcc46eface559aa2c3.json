@@ -115,7 +115,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/home/Eighthalf/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8109.174/bin/cmake/linux/x64/bin/cmake"
+			"value" : "/home/Eighthalf/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8109.222/bin/cmake/linux/x64/bin/cmake"
 		},
 		{
 			"name" : "CMAKE_CPACK_COMMAND",
@@ -127,7 +127,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/home/Eighthalf/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8109.174/bin/cmake/linux/x64/bin/cpack"
+			"value" : "/home/Eighthalf/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8109.222/bin/cmake/linux/x64/bin/cpack"
 		},
 		{
 			"name" : "CMAKE_CTEST_COMMAND",
@@ -139,7 +139,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/home/Eighthalf/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8109.174/bin/cmake/linux/x64/bin/ctest"
+			"value" : "/home/Eighthalf/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8109.222/bin/cmake/linux/x64/bin/ctest"
 		},
 		{
 			"name" : "CMAKE_CXX_COMPILER",
@@ -655,7 +655,7 @@
 				}
 			],
 			"type" : "UNINITIALIZED",
-			"value" : "/home/Eighthalf/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8109.174/bin/ninja/linux/x64/ninja"
+			"value" : "/home/Eighthalf/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8109.222/bin/ninja/linux/x64/ninja"
 		},
 		{
 			"name" : "CMAKE_MODULE_LINKER_FLAGS",
@@ -763,7 +763,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "1"
+			"value" : "2"
 		},
 		{
 			"name" : "CMAKE_OBJCOPY",
@@ -843,7 +843,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "llh"
+			"value" : "llh_merkle_tree"
 		},
 		{
 			"name" : "CMAKE_RANLIB",
@@ -887,7 +887,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/home/Eighthalf/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8109.174/bin/cmake/linux/x64/share/cmake-3.25"
+			"value" : "/home/Eighthalf/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/231.8109.222/bin/cmake/linux/x64/share/cmake-3.25"
 		},
 		{
 			"name" : "CMAKE_SHARED_LINKER_FLAGS",
@@ -1138,7 +1138,7 @@
 			"value" : "TRUE"
 		},
 		{
-			"name" : "llh_BINARY_DIR",
+			"name" : "llh_merkle_tree_BINARY_DIR",
 			"properties" : 
 			[
 				{
@@ -1150,7 +1150,7 @@
 			"value" : "/home/Eighthalf/gem5/src/merkle_tree/cmake-build-debug"
 		},
 		{
-			"name" : "llh_IS_TOP_LEVEL",
+			"name" : "llh_merkle_tree_IS_TOP_LEVEL",
 			"properties" : 
 			[
 				{
@@ -1162,7 +1162,7 @@
 			"value" : "ON"
 		},
 		{
-			"name" : "llh_SOURCE_DIR",
+			"name" : "llh_merkle_tree_SOURCE_DIR",
 			"properties" : 
 			[
 				{
@@ -1174,7 +1174,7 @@
 			"value" : "/home/Eighthalf/gem5/src/merkle_tree"
 		},
 		{
-			"name" : "projects_BINARY_DIR",
+			"name" : "merkle_tree_BINARY_DIR",
 			"properties" : 
 			[
 				{
@@ -1183,10 +1183,10 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/Eighthalf/gem5/src/merkle_tree/cmake-build-debug"
+			"value" : "/home/Eighthalf/gem5/src/merkle_tree/cmake-build-debug/code"
 		},
 		{
-			"name" : "projects_IS_TOP_LEVEL",
+			"name" : "merkle_tree_IS_TOP_LEVEL",
 			"properties" : 
 			[
 				{
@@ -1195,10 +1195,10 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "ON"
+			"value" : "OFF"
 		},
 		{
-			"name" : "projects_SOURCE_DIR",
+			"name" : "merkle_tree_SOURCE_DIR",
 			"properties" : 
 			[
 				{
@@ -1207,7 +1207,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/Eighthalf/gem5/src/merkle_tree"
+			"value" : "/home/Eighthalf/gem5/src/merkle_tree/code"
 		}
 	],
 	"kind" : "cache",

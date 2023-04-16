@@ -1,7 +1,7 @@
+#include "../utils/utils.h"
 #include "forest.h"
 
-Forest::Forest()
-{
+Forest::Forest() {
     number_of_trees = 0;
 }
 
@@ -9,15 +9,14 @@ int Forest::get_number_of_trees() {
     return this->number_of_trees;
 }
 
-vector<Tree*> Forest::get_trees() {
+vector<Tree *> Forest::get_trees() {
     return this->trees;
 }
 
-void Forest::createTree(int index)
-{
+void Forest::createTree(int index) {
     Tree tree;
-
-    vector<string> v = tree.InputNodeData();
+    vector<string> v;
+    v = InputNodeData();
     tree.buildBaseLeafes(v);
     tree.BuildTree(index);
     tree.printLeafNodes();
@@ -30,8 +29,7 @@ void Forest::buildForest() {
     int num;
     cout << "输入树的数量: " << endl;
     cin >> num;
-    for (int i = 1; i <= num; i++)
-    {
+    for (int i = 1; i <= num; i++) {
         cout << "开始构建第" << i << "颗树" << endl;
         createTree(i);
     }
@@ -39,8 +37,7 @@ void Forest::buildForest() {
 }
 
 void Forest::printForest() {
-    for (Tree* el : trees)
-    {
+    for (Tree *el: trees) {
         cout << "这颗树的序号为：" << el->getIndex() << endl;
         el->printLeafNodes();
     }
@@ -54,5 +51,4 @@ void Forest::ModifyForest() {
     //TODO
 }
 
-Forest::~Forest(){}
-
+Forest::~Forest() {}
