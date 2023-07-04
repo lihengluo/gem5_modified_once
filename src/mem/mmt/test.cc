@@ -1,18 +1,17 @@
 #include"iostream"
-#include"counter.h"
+#include"mmt.hh"
 using namespace std;
 
+// to compile this file seperately,try commands:
+//  g++ --std=c++11 test.cc -o test
+//  ./test
+
+
 int main(){
-    MMT mmt;
-    bitset<128> key;
-    bitset<2> state;
-    bitset<58> address;
-    bitset<4> reserved;
-    key=0x1234567890abcdef;
-    state=0x1;
-    address=0x1234567890abcdef;
-    reserved=0x1;
-    mmt.set_root(key,state,address,reserved);
-    cout<<mmt.get_key()<<endl;
+    bitset<2>op = bitset<2>("01");
+    bitset<2>op1 = bitset<2>(op.to_ulong()+3);
+    cout<<op1<<endl;
     return 0;
 }
+
+//创建MMT树
