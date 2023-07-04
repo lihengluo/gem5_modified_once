@@ -1,0 +1,1 @@
+/usr/bin/c++ -Werror CMakeFiles/llh_merkle_tree.dir/main.cpp.o -o build/llh_merkle_tree  src/libmerkle_tree.a 

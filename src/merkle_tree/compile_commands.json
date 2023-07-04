@@ -1,0 +1,27 @@
+[
+{
+  "directory": "/home/eighthalf/gem5_modified_once/src/merkle_tree",
+  "command": "/usr/bin/c++  -I/home/eighthalf/gem5_modified_once/src/merkle_tree/src -Werror -o CMakeFiles/llh_merkle_tree.dir/main.cpp.o -c /home/eighthalf/gem5_modified_once/src/merkle_tree/main.cpp",
+  "file": "/home/eighthalf/gem5_modified_once/src/merkle_tree/main.cpp"
+},
+{
+  "directory": "/home/eighthalf/gem5_modified_once/src/merkle_tree/src",
+  "command": "/usr/bin/c++  -I/home/eighthalf/gem5_modified_once/src/merkle_tree/src -I/home/eighthalf/gem5_modified_once/src/merkle_tree/src/cpp -Werror -o CMakeFiles/merkle_tree.dir/forest/forest.cpp.o -c /home/eighthalf/gem5_modified_once/src/merkle_tree/src/forest/forest.cpp",
+  "file": "/home/eighthalf/gem5_modified_once/src/merkle_tree/src/forest/forest.cpp"
+},
+{
+  "directory": "/home/eighthalf/gem5_modified_once/src/merkle_tree/src",
+  "command": "/usr/bin/c++  -I/home/eighthalf/gem5_modified_once/src/merkle_tree/src -I/home/eighthalf/gem5_modified_once/src/merkle_tree/src/cpp -Werror -o CMakeFiles/merkle_tree.dir/node/node.cpp.o -c /home/eighthalf/gem5_modified_once/src/merkle_tree/src/node/node.cpp",
+  "file": "/home/eighthalf/gem5_modified_once/src/merkle_tree/src/node/node.cpp"
+},
+{
+  "directory": "/home/eighthalf/gem5_modified_once/src/merkle_tree/src",
+  "command": "/usr/bin/c++  -I/home/eighthalf/gem5_modified_once/src/merkle_tree/src -I/home/eighthalf/gem5_modified_once/src/merkle_tree/src/cpp -Werror -o CMakeFiles/merkle_tree.dir/tree/tree.cpp.o -c /home/eighthalf/gem5_modified_once/src/merkle_tree/src/tree/tree.cpp",
+  "file": "/home/eighthalf/gem5_modified_once/src/merkle_tree/src/tree/tree.cpp"
+},
+{
+  "directory": "/home/eighthalf/gem5_modified_once/src/merkle_tree/src",
+  "command": "/usr/bin/c++  -I/home/eighthalf/gem5_modified_once/src/merkle_tree/src -I/home/eighthalf/gem5_modified_once/src/merkle_tree/src/cpp -Werror -o CMakeFiles/merkle_tree.dir/utils/utils.cpp.o -c /home/eighthalf/gem5_modified_once/src/merkle_tree/src/utils/utils.cpp",
+  "file": "/home/eighthalf/gem5_modified_once/src/merkle_tree/src/utils/utils.cpp"
+}
+]

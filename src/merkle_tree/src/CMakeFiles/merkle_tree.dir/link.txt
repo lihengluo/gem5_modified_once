@@ -1,0 +1,2 @@
+/usr/bin/ar qc libmerkle_tree.a CMakeFiles/merkle_tree.dir/forest/forest.cpp.o CMakeFiles/merkle_tree.dir/node/node.cpp.o CMakeFiles/merkle_tree.dir/tree/tree.cpp.o CMakeFiles/merkle_tree.dir/utils/utils.cpp.o
+/usr/bin/ranlib libmerkle_tree.a
